@@ -17,6 +17,10 @@ public class MiaActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("prova", MODE_PRIVATE);
         x = prefs.getInt("numero", 0);
 
+        if (savedInstanceState != null) {
+            System.out.println(savedInstanceState.getInt("numero"));
+        }
+
         Log.e("logging", "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mia);
@@ -49,6 +53,12 @@ public class MiaActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         System.out.println("onPause");
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("numero", x);
+        super.onSaveInstanceState(outState);
     }
 
     @Override
