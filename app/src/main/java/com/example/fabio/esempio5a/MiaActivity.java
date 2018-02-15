@@ -1,5 +1,6 @@
 package com.example.fabio.esempio5a;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,6 +36,17 @@ public class MiaActivity extends AppCompatActivity {
             }
         }
         );
+
+        // Il bottone per cambiare activity
+        Button buttonGoTo = findViewById(R.id.buttonGoTo);
+        buttonGoTo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MiaActivity.this, SecondaActivity.class);
+                i.putExtra("x", x);
+                startActivity(i);
+            }
+        });
     }
 
     @Override

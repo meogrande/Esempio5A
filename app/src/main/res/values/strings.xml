@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Example 5A</string>
     <string name="hello_world">Hello World!</string>
+    <string name="aumenta">aumenta</string>
+    <string name="go_to">vai a</string>
+    <string name="title_activity_seconda">SecondaActivity</string>
 </resources>

@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SecondaActivity"
+            android:label="@string/title_activity_seconda"
+            android:parentActivityName=".MiaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.fabio.esempio5a.MiaActivity" />
+        </activity>
     </application>
 
 </manifest>

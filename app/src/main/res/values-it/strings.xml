@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">Esempio 5A</string>
     <string name="hello_world">Cio Mondo</string>
+    <string name="aumenta">aumenta</string>
+    <string name="go_to">vai a</string>
 </resources>
